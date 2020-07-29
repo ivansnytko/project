@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="Project" parallel="tests"
+	thread-count="3">
+
+	<test name="Project tests">
+		<classes>
+			<class name="com.snytko.project.AppTest">
+				<methods>
+					<include name="init1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Project2 tests">
+		<classes>
+			<class name="com.snytko.project.AppTest">
+				<methods>
+					<include name="init2"></include>
+					<include name="init3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Project3 tests">
+		<classes>
+			<class name="com.snytko.project.AppTest">
+				<methods>
+					<include name="init4"></include>
+					<include name="init5"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
